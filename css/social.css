@@ -1,0 +1,257 @@
+@charset "utf-8";
+
+body {
+    background-color: #1f1e22; /* or a close match to the image */
+    background-image: url(../img/bridge.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+p {
+
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 25px;
+}
+
+.p2 {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 25px;
+
+
+
+}
+/* .p3 {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 25px;
+} */
+
+.h1 {
+    
+    color: black;
+    font-size: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 10px;
+    text-align: center;
+    
+
+
+}
+
+
+h2 {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    background-size: 200%;
+    background-clip: text;
+    text-shadow: 5px 5px 10px rgba(255, 254, 254, 0.87);
+}
+h3 {
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    color: black;
+    background-size: 200%;
+    background-clip: text;
+    text-shadow: 5px 5px 10px rgba(255, 254, 254, 0.87);
+}
+
+
+.footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    
+}
+
+ul {
+    list-style-type: none;
+    margin: 25px;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+    
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+    background-color: #907fe0;
+}
+body .gallery-item {
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    margin: 0;
+
+    padding: 5px;
+
+    background-color: #1f1e22;
+}
+
+.gallery {
+
+    display: flex;
+
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.gallery-item {
+
+    flex: 1 1 calc(25% - 10px);
+
+    max-width: calc(25% - 10px);
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+
+
+}
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: auto;
+
+    display: block;
+
+}
+th,td{
+    border: 1px solid white;
+    border-radius: 10px;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+/* tr:nth-child(even) {
+    background-color: #D6EEEE;
+  } */
+th,td{
+    background-color: white;
+    color: black;
+    padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 40px;
+  
+    font-style: italic;
+}
+caption{
+    font-size: x-large;
+    color: rgb(235, 227, 227);
+    text-shadow: 2px 2px 5px rgba(248, 210, 210, 0.87);
+}
+
+
+/* Responsive Design */
+
+@media (max-width: 600px) {
+
+    .gallery-item {
+
+        flex: 1 1 calc(50% - 10px);
+
+        max-width: calc(50% - 10px);
+
+    }
+    @media (max-width: 600px) {
+        table, thead, tbody, th, td, tr {
+            display: block;
+        }
+    
+        thead {
+            display: none; /* Hide table headers */
+        }
+    
+        tr {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    
+        td {
+            padding: 10px;
+            text-align: right;
+            position: relative;
+        }
+    
+        td::before {
+            content: attr(data-label);
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            font-weight: bold;
+            text-align: left;
+            color: black;
+        }
+    }
+
+}
+

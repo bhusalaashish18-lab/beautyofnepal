@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NEPAL</title>
+  <link rel="stylesheet" href="css/contact.css">
+</head>
+
+
+  
+  <!-- Title -->
+  <div class="h1">
+    BEAUTY OF NEPAL
+  </div>
+  
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="social.html">SOCIAL</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="aboutus.html">ABOUT US</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <div class="contact-container">
+    <div class="left-col">
+        <img class="logo" src="img/logo4.png" alt="Logo" />
+    </div>
+
+    <div class="right-col">
+      <!-- Dark/Light Theme Switch -->
+      <div class="theme-switch-wrapper">
+        <label class="theme-switch" for="checkbox">
+          <input type="checkbox" id="checkbox" />
+          <div class="slider round"></div>
+        </label>
+      </div>
+
+      <h1>Contact us</h1>
+      <p>
+        Planning to visit Nepal soon? Get insider tips on where to go, things to do and find best deals for your next adventure.
+      </p>
+
+      <!-- Form -->
+      <form id="contact-form" method="post">
+        <label for="name">Full name</label>
+        <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+        <label for="message">Message</label>
+        <textarea rows="6" id="message" name="message" placeholder="Your Message" required></textarea>
+
+        <button type="submit" id="submit" name="submit">Send</button>
+      </form>
+
+      <div id="error"></div>
+      <div id="success-msg"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Ashish. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

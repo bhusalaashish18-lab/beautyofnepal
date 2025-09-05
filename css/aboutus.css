@@ -1,0 +1,119 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(../img/Sayepatri2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 20px;
+    color: #222;
+  }
+  
+  /* Main Title */
+  .h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #333;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+  }
+  h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #080808;
+    text-shadow: white;
+    letter-spacing: 3px;
+    padding-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(255, 254, 254, 0.87);
+
+  }
+  
+  /* Subheading */
+  h2 {
+    color: #030303;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    padding-left: 18px;
+    text-shadow: 2px 2px 5px rgba(255, 254, 254, 0.87);
+
+  }
+  
+  /* Paragraphs */
+  p {
+    background-color: white;
+    color: black;
+    font-size: 20px;
+    font-style: italic;
+    position: relative;
+    padding: 10px;
+    margin: 25px;
+  }
+  
+  /* Navigation Menu */
+  ul {
+    list-style-type: none;
+    margin: 25px;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #907fe0;
+  }
+  /* Footer */
+footer {
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    
+    margin: 20px;
+    
+  }
+  
+  /* Responsive */
+  @media only screen and (max-width: 950px) {
+    .contact-container {
+      flex-direction: column;
+    }
+  
+    @media only screen and (max-width: 950px) {
+      .left-col {
+        min-height: 300px;
+      }
+    
+      .logo {
+        width: 6rem;
+      }
+    }
+    
+    .right-col {
+      width: 100%;
+      flex: unset;
+    }
+  
+    p {
+      max-width: 100%;
+    }
+  }
+  

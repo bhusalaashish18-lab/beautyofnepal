@@ -1,0 +1,184 @@
+/* Basic Reset and Styling */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background-image: url("../img/12.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #333;
+}
+
+.h1 {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+/* Navigation */
+ul {
+  list-style-type: none;
+  margin: 25px;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+  text-align: center;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #907fe0;
+}
+
+.logo {
+  border-radius: 50%;
+  width: 10rem;
+  padding: 1.5rem;
+}
+
+/* Contact Layout */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #fcfdfd;
+}
+
+.left-col {
+  flex: 1 1 45%;
+  background-image: url("../img/12.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+.right-col {
+  flex: 1 1 55%;
+  padding: 5rem 3.5rem;
+  background-color: #fcfdfd;
+}
+
+/* Typography */
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  color: #3f444c;
+}
+
+p {
+  font-size: 0.9rem;
+  color: #818386;
+  margin: 0.25rem 0;
+  max-width: 40vw;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 0.625rem;
+  color: #818386;
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Form */
+form {
+  margin-top: 2rem;
+  max-width: 500px;
+}
+
+input,
+textarea {
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #818386;
+  color: #333;
+  outline: none;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+button {
+  background-color: #3b3636;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Messages */
+#error,
+#success-msg {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #818386;
+}
+
+/* Footer */
+footer {
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media only screen and (max-width: 950px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 950px) {
+    .left-col {
+      min-height: 300px;
+    }
+  
+    .logo {
+      width: 6rem;
+    }
+  }
+  
+  .right-col {
+    width: 100%;
+    flex: unset;
+  }
+
+  p {
+    max-width: 100%;
+  }
+}
